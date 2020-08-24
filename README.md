@@ -1,4 +1,4 @@
-# lark-search-alfred-workflow
+# lark-space-alfred-workflow
 
 An Alfred workflow to search Lark Space with instant results.
 
@@ -11,9 +11,17 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 
 ## Feature
 
+### 1. Search docs
+
 type `lk [doc_name_you_want_to_search]` in Alfred, you will see results coming in if there are matches.
 
 ![](https://i.loli.net/2020/08/14/Gx8PQftEpA3WCgF.png)
+
+### 2. Create new Lark Doc
+
+![](https://raw.githubusercontent.com/hikerpig/lark-space-alfred-workflow/master/screenshots/create-doc.png)
+
+type `lkc` in Alfred to trigger a file type filter, confirm to create a new Docs or Sheets.
 
 ## Setup
 

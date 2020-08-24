@@ -14,16 +14,11 @@ from urlparse import urlparse
 from datetime import datetime, date
 
 from searchresult import SearchResult
+from lark_common import cookie, larkDomain, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, headers
 
-# config
-session = os.environ['session']
-larkDomain = os.environ['larkDomain']
-
-cookie = "session={}".format(session)
-
-def buildSearchPayload():
+def buildSearchPayload(query_str):
     query = {
-        "query": unicodeAlfredQuery,
+        "query": query_str,
         "offset": 0,
         "count": 9,
         "candidates_type": 2,
@@ -35,21 +30,9 @@ def buildSearchPayload():
     jsonData = json.dumps(query)
     return jsonData
 
-# Get query from Alfred
-alfredQuery = str(sys.argv[1])
-unicodeAlfredQuery = unicodedata.normalize('NFC', alfredQuery.decode('utf-8', 'ignore'))
-
-parsedLarkDomain = urlparse(larkDomain)
-larkDriveHome = "https://{}/drive/home/".format(parsedLarkDomain.netloc)
-referer = larkDriveHome
-
-# Call Space api
-headers = {"Content-type": "application/json",
-           "Referer": referer,
-           "Cookie": cookie}
 conn = httplib.HTTPSConnection(parsedLarkDomain.netloc)
 conn.request("POST", "/space/api/search/refine_search/",
-             buildSearchPayload(), headers)
+             buildSearchPayload(unicodeAlfredQuery), headers)
 response = conn.getresponse()
 
 resData = response.read()
