@@ -402,7 +402,7 @@ PYTHONIOENCODING=UTF-8 python lark-create.py $doc_type</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>lark-search-alfred-workflow
+	<string>lark-space-alfred-workflow
 
 An Alfred workflow to search Lark Space with instant results
 
@@ -502,7 +502,7 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 		<string>larkDomain</string>
 	</array>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/hikerpig/lark-space-alfred-workflow/</string>
 </dict>

@@ -19,9 +19,9 @@ type `lk [doc_name_you_want_to_search]` in Alfred, you will see results coming i
 
 ### 2. Create new Lark Doc
 
-![](https://raw.githubusercontent.com/hikerpig/lark-space-alfred-workflow/master/screenshots/create-doc.png)
-
 type `lkc` in Alfred to trigger a file type filter, confirm to create a new Docs or Sheets.
+
+![](https://raw.githubusercontent.com/hikerpig/lark-space-alfred-workflow/master/screenshots/create-doc.png)
 
 ## Setup
 
