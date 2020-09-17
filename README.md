@@ -33,7 +33,7 @@ Normally it's something like `https://*.larksuite.com` .
 
 Goto any Lark Docs page in your browser, make sure you are logged in. Then:
 
-open Devtools -> Applicatoin -> Cookies -> check your lark domain's cookies -> copy the value of `session`
+open Devtools -> Application -> Cookies -> check your lark domain's cookies -> copy the value of `session`
 
 ![](https://i.loli.net/2020/08/13/c7eyYaC2quAiOKS.png)
 

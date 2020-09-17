@@ -43,13 +43,6 @@ response = conn.getresponse()
 resData = response.read()
 conn.close()
 
-# for debug
-# resData = json.dumps({
-#     'data': {
-#         'url': 'https://namaraii.com/cheatsheet/notion.html'
-#     }
-# })
-
 dataJson = json.loads(resData)
 if dataJson['code'] == 0:
     doc_url = dataJson['data']['url']

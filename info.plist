@@ -47,19 +47,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5ABAAB48-7866-45CD-8F2D-5DCA8B1DDA67</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FE9B819E-080C-4430-A879-07CDB8C7F718</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>7A8E4C12-6E2B-400D-8D2D-1BD347F034FB</key>
 		<array>
 			<dict>
@@ -85,12 +72,35 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C666857E-931A-4FEA-A527-32967582967D</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>copy url to clipboard</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>AB558EA7-DF9A-4CE9-9B4D-FB040C71F6B7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5ABAAB48-7866-45CD-8F2D-5DCA8B1DDA67</string>
+				<string>FE9B819E-080C-4430-A879-07CDB8C7F718</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C666857E-931A-4FEA-A527-32967582967D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5578E30C-3EFE-4AA2-BF16-C060ED6BBBA6</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -194,76 +204,40 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>lkc</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>python lark-list-doc-types.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Choose a file type you want to create</string>
-				<key>title</key>
-				<string>Create Lark Doc</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>AB558EA7-DF9A-4CE9-9B4D-FB040C71F6B7</string>
+			<string>C666857E-931A-4FEA-A527-32967582967D</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>items</key>
-				<string>[{"title":"Docs","arg":"2","subtitle":"New Docs"},{"title":"Sheets","arg":"3","subtitle":"New Sheets"}]</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Choose a file type you want to create</string>
-				<key>title</key>
-				<string>Choose a file type you want to create</string>
-				<key>withspace</key>
+				<key>onlyshowifquerypopulated</key>
 				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Url copied</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>5ABAAB48-7866-45CD-8F2D-5DCA8B1DDA67</string>
+			<string>5578E30C-3EFE-4AA2-BF16-C060ED6BBBA6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -310,6 +284,55 @@ PYTHONIOENCODING=UTF-8 python lark-create.py $doc_type</string>
 			<string>ACF96262-2D22-4BB7-AD98-45CEAFC29D48</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>lkc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>python lark-list-doc-types.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Choose a file type you want to create</string>
+				<key>title</key>
+				<string>Create Lark Doc</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AB558EA7-DF9A-4CE9-9B4D-FB040C71F6B7</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -414,87 +437,94 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 		<key>0A9B92E0-34CB-405A-925C-394F82A836B9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>535</integer>
 		</dict>
 		<key>43F98D0B-8F4C-4C52-96EA-49C957D85827</key>
 		<dict>
 			<key>xpos</key>
-			<integer>555</integer>
+			<integer>535</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>565</integer>
 		</dict>
 		<key>5507E16C-9B3E-4A4E-9E8C-74029BDD3EDA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>100</integer>
+			<integer>80</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>535</integer>
 		</dict>
-		<key>5ABAAB48-7866-45CD-8F2D-5DCA8B1DDA67</key>
+		<key>5578E30C-3EFE-4AA2-BF16-C060ED6BBBA6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>650</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>215</integer>
 		</dict>
 		<key>7A8E4C12-6E2B-400D-8D2D-1BD347F034FB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>770</integer>
+			<integer>540</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>405</integer>
 		</dict>
 		<key>7DD3BDE5-A157-42E5-9376-F681FB50A4EE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>95</integer>
+			<integer>85</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>75</integer>
 		</dict>
 		<key>8ED4D66B-C44A-4BEF-BEEA-6BE4D27EF9C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>665</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>535</integer>
 		</dict>
 		<key>AB558EA7-DF9A-4CE9-9B4D-FB040C71F6B7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>90</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>195</integer>
+			<integer>375</integer>
 		</dict>
 		<key>ACF96262-2D22-4BB7-AD98-45CEAFC29D48</key>
 		<dict>
 			<key>xpos</key>
-			<integer>885</integer>
+			<integer>645</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>375</integer>
+		</dict>
+		<key>C666857E-931A-4FEA-A527-32967582967D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>355</integer>
+			<key>ypos</key>
+			<integer>215</integer>
 		</dict>
 		<key>FCE03E9D-F992-4B21-9A77-E72D5130DF80</key>
 		<dict>
 			<key>xpos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>75</integer>
 		</dict>
 		<key>FE9B819E-080C-4430-A879-07CDB8C7F718</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>360</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>375</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
 	<dict>
 		<key>larkDomain</key>
-		<string>https://bytedance.feishu.cn/</string>
+		<string></string>
 		<key>session</key>
-		<string>XN0YXJ0-97f4be19-2f93-4775-846d-394edf68fd9g-WVuZA</string>
+		<string></string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
@@ -502,7 +532,7 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 		<string>larkDomain</string>
 	</array>
 	<key>version</key>
-	<string>0.2.0</string>
+	<string>0.3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/hikerpig/lark-space-alfred-workflow/</string>
 </dict>
