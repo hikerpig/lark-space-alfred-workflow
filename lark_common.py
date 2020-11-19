@@ -32,6 +32,7 @@ headers = {"Content-type": "application/json",
 class DocType(IntEnum):
     DOC = 2
     SHEET = 3
+    MINDNOTE = 11
 
     def __str__(self):
         return str(self.value)
@@ -39,4 +40,5 @@ class DocType(IntEnum):
 ITEM_TYPE_ICONNAME_MAPPING = {
     2: 'doc.png',
     3: 'sheet.png',
+    11: 'mindnote.png',
 }
