@@ -26,7 +26,7 @@ def buildSearchPayload(query_str):
 
 conn = httplib.HTTPSConnection(parsedLarkDomain.netloc)
 conn.request("POST", "/space/api/search/refine_search/",
-             buildSearchPayload(unicodeAlfredQuery), headers)
+             buildSearchPayload(unicodeAlfredQuery), common_headers)
 response = conn.getresponse()
 
 resData = response.read()
