@@ -2,18 +2,11 @@
 
 import httplib
 import json
-import os
-import os.path
-import struct
 import urllib
-import re
 import sys
 
-from urlparse import urlparse
-from datetime import datetime, date
-
 from searchresult import SearchResult
-from lark_common import cookie, larkDomain, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, cookie, referer, DocType
+from lark_common import cookie, common_headers, parsedLarkDomain, unicodeAlfredQuery, cookie, referer, DocType
 
 def build_create_payload(doc_type):
     data = {
@@ -31,9 +24,10 @@ except Exception, e:
     doc_type = DocType.DOC
 
 payload = build_create_payload(doc_type)
-headers = {"Content-type": "application/x-www-form-urlencoded",
-           "Referer": referer,
-           "Cookie": cookie}
+headers = dict(common_headers)
+headers.update({
+    "Content-type": "application/x-www-form-urlencoded",
+})
 
 conn = httplib.HTTPSConnection(parsedLarkDomain.netloc)
 conn.request("POST", "/space/api/explorer/create/",

@@ -25,7 +25,8 @@ unicodeAlfredQuery = unicodedata.normalize('NFC', alfredQuery.decode('utf-8', 'i
 referer = larkDriveHome
 
 # Call Space api
-headers = {"Content-type": "application/json",
+common_headers = {"Content-type": "application/json",
+           "User-Agent": "lark-space-alfred-workflow",
            "Referer": referer,
            "Cookie": cookie}
 

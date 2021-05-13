@@ -2,19 +2,13 @@
 
 import httplib
 import json
-import os
-import os.path
-import struct
 import sys
-import urllib
-import unicodedata
 import re
 
-from urlparse import urlparse
 from datetime import datetime, date
 
 from searchresult import SearchResult
-from lark_common import cookie, larkDomain, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, headers
+from lark_common import cookie, larkDomain, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, common_headers
 
 def buildSearchPayload(query_str):
     query = {
