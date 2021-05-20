@@ -33,6 +33,7 @@ common_headers = {"Content-type": "application/json",
 class DocType(IntEnum):
     DOC = 2
     SHEET = 3
+    BITABLE = 8
     MINDNOTE = 11
 
     def __str__(self):
@@ -41,5 +42,6 @@ class DocType(IntEnum):
 ITEM_TYPE_ICONNAME_MAPPING = {
     2: 'doc.png',
     3: 'sheet.png',
+    8: 'bitable.png',
     11: 'mindnote.png',
 }

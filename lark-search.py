@@ -8,7 +8,7 @@ import re
 from datetime import datetime, date
 
 from searchresult import SearchResult
-from lark_common import cookie, larkDomain, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, common_headers
+from lark_common import ITEM_TYPE_ICONNAME_MAPPING, larkDriveHome, parsedLarkDomain, unicodeAlfredQuery, common_headers
 
 def buildSearchPayload(query_str):
     query = {
@@ -39,11 +39,6 @@ data = json.loads(resData)['data']
 # with open('results.json') as json_file:
 #     data = json.load(json_file)
 # data = data['data']
-
-ITEM_TYPE_ICONNAME_MAPPING = {
-    2: 'doc.png',
-    3: 'sheet.png',
-}
 
 TITLE_REPLACE_PATTERN = "<em>(.*)</em>"
 

@@ -26,6 +26,13 @@ items = {
                 'path': "itemicons/" + ITEM_TYPE_ICONNAME_MAPPING.get(DocType.MINDNOTE)
             }
         },
+        {
+            'title': 'Create new Bitable',
+            'arg': DocType.BITABLE,
+            'icon': {
+                'path': "itemicons/" + ITEM_TYPE_ICONNAME_MAPPING.get(DocType.BITABLE)
+            }
+        },
     ]
 }
 items_json = json.dumps(items)
