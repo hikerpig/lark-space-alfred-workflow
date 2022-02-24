@@ -54,7 +54,14 @@ for k in data['tokens']:
     viewed_time = datetime.fromtimestamp(obj['open_time']).strftime('%H:%M')
     updated_time = datetime.fromtimestamp(obj['edit_time']).isoformat()
     searchResultObject.subtitle = "Author: " + obj['author'] + ", You viewed " + viewed_time + ", " + obj['edit_name'] + " updated " + updated_time
-    searchResultObject.link = obj['url']
+    url = obj['url']
+    if url:
+      pass
+    else:
+      if obj['wiki_infos'] and len(obj['wiki_infos']):
+        url = obj['wiki_infos'][0]['wiki_url']
+      searchResultObject.link = url
+
     if ITEM_TYPE_ICONNAME_MAPPING.has_key(obj['type']):
         searchResultObject.icon = "itemicons/" + ITEM_TYPE_ICONNAME_MAPPING.get(obj['type'])
     searchResultList.append(searchResultObject)
@@ -83,6 +90,8 @@ if not itemList:
     item["arg"] = larkDriveHome
     itemList.append(item)
 items["items"] = itemList
+
 items_json = json.dumps(items)
+# items_json = json.dumps(items, indent=2)
 
 sys.stdout.write(items_json)
