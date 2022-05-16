@@ -60,7 +60,8 @@ for k in data['tokens']:
     else:
       if obj['wiki_infos'] and len(obj['wiki_infos']):
         url = obj['wiki_infos'][0]['wiki_url']
-      searchResultObject.link = url
+
+    searchResultObject.link = url
 
     if ITEM_TYPE_ICONNAME_MAPPING.has_key(obj['type']):
         searchResultObject.icon = "itemicons/" + ITEM_TYPE_ICONNAME_MAPPING.get(obj['type'])
