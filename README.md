@@ -42,3 +42,7 @@ open Devtools -> Application -> Cookies -> check your lark domain's cookies -> c
 Paste those two variables into workflow configuration.
 
 ![](https://i.loli.net/2020/08/14/huFpDeo2xNLsRqi.png)
+
+And there are other variables:
+
+- `pythonPath`, path to python 2 executable, for example: `/Users/hikerpig/.pyenv/versions/2.7.18/bin/python`
