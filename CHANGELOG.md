@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.4.2](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.4.1...v0.4.2) (2022-05-27)
+
+
+### Bug Fixes
+
+* missing link ([dd8a485](https://github.com/hikerpig/lark-space-alfred-workflow/commit/dd8a485ca5659ba764b1fe1840bd557817601f5a))
+
+
+### Features
+
+* add variable 'pythonPath' ([e18ca65](https://github.com/hikerpig/lark-space-alfred-workflow/commit/e18ca655bfaafe143003bc9d8a81e4fa494273f8))
+* remove enum import, so we are happy in python2 ([ad5ca50](https://github.com/hikerpig/lark-space-alfred-workflow/commit/ad5ca5083ab57dcdebf17ee135b6e07802323eab))
+
 ### [0.3.1](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.3.0...v0.3.1) (2020-11-19)
 
 

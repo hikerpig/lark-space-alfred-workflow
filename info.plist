@@ -535,7 +535,7 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 		<string>session</string>
 	</array>
 	<key>version</key>
-	<string>0.4.1</string>
+	<string>0.4.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/hikerpig/lark-space-alfred-workflow/</string>
 </dict>
