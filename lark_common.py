@@ -3,7 +3,6 @@ import unicodedata
 import os
 
 from urlparse import urlparse
-from enum import IntEnum
 
 # config
 session = os.environ['session']
@@ -30,14 +29,11 @@ common_headers = {"Content-type": "application/json",
            "Referer": referer,
            "Cookie": cookie}
 
-class DocType(IntEnum):
+class DocType:
     DOC = 2
     SHEET = 3
     BITABLE = 8
     MINDNOTE = 11
-
-    def __str__(self):
-        return str(self.value)
 
 ITEM_TYPE_ICONNAME_MAPPING = {
     2: 'doc.png',
