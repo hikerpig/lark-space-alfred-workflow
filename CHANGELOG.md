@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.4.2...v.5.0) (2022-06-09)
+
+
+### Features
+
+* add support for docx ([fc37193](https://github.com/hikerpig/lark-space-alfred-workflow/commit/fc37193ed0eeea45b5446be6c34d9fabba7519f2))
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
