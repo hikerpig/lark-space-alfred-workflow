@@ -13,6 +13,13 @@ items = {
             }
         },
         {
+            'title': 'Create new Docx',
+            'arg': DocType.DOCX,
+            'icon': {
+                'path': "itemicons/" + ITEM_TYPE_ICONNAME_MAPPING.get(DocType.DOCX)
+            }
+        },
+        {
             'title': 'Create new Sheets',
             'arg': DocType.SHEET,
             'icon': {

@@ -41,6 +41,7 @@ data = json.loads(resData)['data']
 # data = data['data']
 
 TITLE_REPLACE_PATTERN = "<em>(.*)</em>"
+SPACE_DOCX_REPLACE_PATTERN = "\/space\/docx"
 
 # Extract search results from lark response
 searchResultList = []
