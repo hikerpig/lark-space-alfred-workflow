@@ -161,7 +161,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>PYTHONIOENCODING=UTF-8 $pythonPath lark-search.py "{query}"</string>
+				<string>pyCmd=$pythonPath
+if [ !$pyCmd ]; then
+  pyCmd='python'
+fi
+
+
+PYTHONIOENCODING=UTF-8 $pyCmd lark-search.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -251,7 +257,12 @@
 				<key>script</key>
 				<string>doc_type=$1
 
-PYTHONIOENCODING=UTF-8 $pythonPath lark-create.py $doc_type</string>
+pyCmd=$pythonPath
+if [ !$pyCmd ]; then
+  pyCmd='python'
+fi
+
+PYTHONIOENCODING=UTF-8 $pyCmd lark-create.py $doc_type</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -313,7 +324,12 @@ PYTHONIOENCODING=UTF-8 $pythonPath lark-create.py $doc_type</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>$pythonPath lark-list-doc-types.py</string>
+				<string>pyCmd=$pythonPath
+if [ !$pyCmd ]; then
+  pyCmd='python'
+fi
+
+$pyCmd lark-list-doc-types.py</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -535,7 +551,7 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 		<string>session</string>
 	</array>
 	<key>version</key>
-	<string>0.5.0</string>
+	<string>0.5.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/hikerpig/lark-space-alfred-workflow/</string>
 </dict>
