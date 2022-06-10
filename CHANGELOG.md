@@ -1,3 +1,12 @@
+# [0.5.1](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.5.0...v0.5.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* should have default python executable when `pythonEnv` is not provided ([9055641](https://github.com/hikerpig/lark-space-alfred-workflow/commit/905564164e8f8927326b56d73de3a1fab42105de))
+
+
+
 # [0.5.0](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.4.2...v.5.0) (2022-06-09)
 
 
