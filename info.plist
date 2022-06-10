@@ -162,7 +162,8 @@
 				<string></string>
 				<key>script</key>
 				<string>pyCmd=$pythonPath
-if [ !$pyCmd ]; then
+
+if [ ! $pyCmd ]; then
   pyCmd='python'
 fi
 
@@ -258,9 +259,10 @@ PYTHONIOENCODING=UTF-8 $pyCmd lark-search.py "{query}"</string>
 				<string>doc_type=$1
 
 pyCmd=$pythonPath
-if [ !$pyCmd ]; then
+if [ ! $pyCmd ]; then
   pyCmd='python'
 fi
+
 
 PYTHONIOENCODING=UTF-8 $pyCmd lark-create.py $doc_type</string>
 				<key>scriptargtype</key>
@@ -325,7 +327,7 @@ PYTHONIOENCODING=UTF-8 $pyCmd lark-create.py $doc_type</string>
 				<string></string>
 				<key>script</key>
 				<string>pyCmd=$pythonPath
-if [ !$pyCmd ]; then
+if [ ! $pyCmd ]; then
   pyCmd='python'
 fi
 
