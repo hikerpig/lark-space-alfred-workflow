@@ -1,3 +1,4 @@
+#coding:utf-8
 class SearchResult(object):
     def __init__(self, id):
         self._id = id
