@@ -8,7 +8,6 @@ Simply type your keyword into Alfred (default: lk) to see instant search results
 
 ## Installation
 
-
 ## Feature
 
 ### 1. Search docs
@@ -45,4 +44,4 @@ Paste those two variables into workflow configuration.
 
 And there are other variables:
 
-- `pythonPath`, path to python 2 executable, for example: `/Users/hikerpig/.pyenv/versions/2.7.18/bin/python`
+- `pythonPath`, path to python executable, can be python 2 or 3, for example: `/Users/hikerpig/.pyenv/versions/2.7.18/bin/python`

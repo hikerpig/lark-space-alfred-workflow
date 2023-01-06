@@ -14,13 +14,18 @@ cookie = "session={}".format(session)
 parsedLarkDomain = urlparse(larkDomain)
 larkDriveHome = "https://{}/drive/home/".format(parsedLarkDomain.netloc)
 
+is_py2 = sys.version_info.major == 2
 
 # Get query from Alfred
 try:
     alfredQuery = str(sys.argv[1])
 except Exception, e:
     alfredQuery = ''
-unicodeAlfredQuery = unicodedata.normalize('NFC', alfredQuery.decode('utf-8', 'ignore'))
+
+if is_py2:
+    unicodeAlfredQuery = unicodedata.normalize('NFC', alfredQuery.decode('utf-8', 'ignore'))
+else:
+    unicodeAlfredQuery = unicodedata.normalize('NFC', alfredQuery)
 
 referer = larkDriveHome
 
