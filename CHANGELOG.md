@@ -1,3 +1,21 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+# [0.6.0](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.5.1...v0.6.0) (2023-01-07)
+
+
+### Bug Fixes
+
+* shell script ([6ea6b38](https://github.com/hikerpig/lark-space-alfred-workflow/commit/6ea6b3878098af77dec77011b91c74b1f17a2955))
+
+
+### Features
+
+* support both python 2 and 3 ([5563f33](https://github.com/hikerpig/lark-space-alfred-workflow/commit/5563f33f0ea3a693b03f4d09f4d92a3d315e5f32))
+
+
+
 # [0.5.1](https://github.com/hikerpig/lark-space-alfred-workflow/compare/v0.5.0...v0.5.1) (2022-06-10)
 
 
